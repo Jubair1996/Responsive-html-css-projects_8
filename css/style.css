@@ -1,0 +1,257 @@
+/* Google Fonts Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/* font-family: 'Poppins', sans-serif;
+ */
+/* Google Fonts Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+/* font-family: 'Inter', sans-serif;
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Header Section Starts */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 30px 100px;
+}
+.nav-logo img {
+  width: 100px;
+}
+.nav-details ul {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+.nav-details ul li {
+  list-style: none;
+}
+.nav-details ul li a {
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 1.5em;
+  color: #000000;
+}
+.nav-details ul li a:hover {
+  color: #e02c6d;
+}
+.Preebook-container {
+  display: flex;
+  align-items: center;
+  margin: 30px 100px;
+}
+.Preebook-text {
+  margin-right: 50px;
+}
+.Preebook-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 70px;
+  color: #3a3a3a;
+}
+.Preebook-text p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "liga" off;
+  color: #3a3a3a;
+}
+
+.preebook-button {
+  background: #e02c6d;
+  border-radius: 41px;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+.preebook-button a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #ffffff;
+  background-color: #e02c6d;
+}
+.preebook-button .fa-arrow-right {
+  background-color: #e02c6d;
+}
+.camera img {
+  width: 340px;
+}
+.circle img {
+  width: 450px;
+}
+.camera {
+  position: relative;
+  left: 70px;
+  bottom: -200px;
+  z-index: 1;
+}
+
+.circle {
+  position: relative;
+  top: -200px;
+}
+/* Header Section Ends */
+/* More Website Links Starts */
+.website-title,
+.collection-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.website-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+/* More Website Links Ends */
+/* Collection Secttion Starts  */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  margin: 0 100px;
+}
+.card {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 1rem;
+}
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 40px;
+  font-feature-settings: "liga" off;
+  color: #18191f;
+}
+.card img {
+  width: 100%;
+}
+.card h3 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.87);
+}
+.card p i {
+  color: #fb8200;
+  margin: 10px 0;
+}
+.card-details {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.018em;
+  color: #787885;
+}
+/* Collection Secttion Ends  */
+/* Featured products Starts */
+.feature-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 6em;
+}
+.feature-img {
+  margin-right: 7em;
+}
+.feature-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 60px;
+  color: #0a0826;
+}
+.feature-text p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6c6c6c;
+}
+/* Featured products Ends */
+/* Footer Section Starts */
+footer {
+  background-color: rgba(0, 0, 0, 0.877);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  font-feature-settings: "liga" off;
+  padding: 20px 0;
+  color: #ffffff;
+}
+/* Footer Section Ends */
+/* Media Query*/
+@media only screen and (min-width: 300px) and (max-width: 992px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-details ul {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .nav-details ul li {
+    margin-bottom: 10px;
+  }
+  .Preebook-container {
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+  .website-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .website-container > div {
+    margin-bottom: 30px;
+  }
+  .feature-container {
+    flex-direction: column-reverse;
+    margin: 40px;
+  }
+  .feature-img {
+    margin: 2em auto;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    margin: 0 30px;
+  }
+}
+@media only screen and (min-width: 777px) and (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 0 30px;
+  }
+}
